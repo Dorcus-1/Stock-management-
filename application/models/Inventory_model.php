@@ -30,4 +30,8 @@ class Inventory_model extends CI_model{
 		 
 		  return $this->db->get_where('stk_inventory',array('inventory_id'=>$inventoryId))->result_array();
 	  }
+	function deleteInventory($inventoryId){
+		$this->db->where('inventory_id',$inventoryId);
+		$this->db->delete('stk_inventory');
+	   }
 }

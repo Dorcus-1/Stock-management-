@@ -34,7 +34,7 @@
          <td><?php echo $data['quantity'];?></td> 
          <td><?php echo $data['productId'];?></td> 
                          <td><a href="<?php echo base_url().'pages/edit/'.$data['inventory_id'];?>">Edit</a></td> 
-                         <td><a href="<?php echo base_url().'delete.php'.$data['inventory_id'];?>">Delete</a></td> 
+                         <td><a href="<?php echo base_url().'pages/delete/'.$data['inventory_id'];?>">Delete</a></td> 
        </tr> 
              <?php } ?> 
      </tbody> 

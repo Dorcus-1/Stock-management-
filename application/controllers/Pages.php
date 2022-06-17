@@ -43,5 +43,14 @@ class Pages extends CI_Controller{
 		  
 		   
 	 }
+	 function delete($inventoryId){
+		$inventory=$this->Inventory_model->getInventory($inventoryId);
+		if(empty($inventory)){
+			echo "failed";
+		}
+		$this->Inventory_model->deleteInventory($inventoryId);
+		redirect(base_url().'index.php/pages/show/');
+
+	 }
 }
 ?>
