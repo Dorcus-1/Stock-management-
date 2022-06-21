@@ -15,7 +15,8 @@ class Inventory_model extends CI_model{
 	
 	}
 	function all(){
-		return $inventory= $this->db->get('stk_inventory')->result_array();
+		$inventory= $this->db->get('stk_inventory')->result();
+		return $inventory;
 	}
 	function updateInventory($inventoryId){
 		$data = array(
@@ -27,8 +28,7 @@ class Inventory_model extends CI_model{
 
 	function getInventory($inventoryId)
 	    {
-		 
-		  return $this->db->get_where('stk_inventory',array('inventory_id'=>$inventoryId))->result_array();
+		return $this->db->get_where('stk_inventory',array('inventory_id'=>$inventoryId))->result_array();
 	  }
 	function deleteInventory($inventoryId){
 		$this->db->where('inventory_id',$inventoryId);
