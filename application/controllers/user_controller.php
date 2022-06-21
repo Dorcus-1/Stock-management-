@@ -29,9 +29,7 @@ class User_controller extends CI_Controller
 			$password = $this->input->post('password');
 			$validate = $this->User_model->index($email, $password);
 			if ($validate) {
-				$this->load->model('Inventory_model');
-				$data['inventory'] = $this->Inventory_model->all();
-				$this->load->view('listing', $data);
+				$this->load->view('home');
 			} 
 			else {
 				echo "bruuuuh";
