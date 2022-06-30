@@ -243,7 +243,7 @@ main {
       <li>
         <a href="#" class="nav-link active">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-          Customers
+          Tables
         </a>
       </li>
     </ul>

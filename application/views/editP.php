@@ -103,28 +103,32 @@ body {
 </head>
 <body>
 <div class="signup-form">
+
     <form action="" method="post">
-		<h2>Register Product</h2>
+		<h2>Update product</h2>
 		<p class="hint-text">Create your account. It's free and only takes a minute.</p>
         <div class="form-group">
 			<div class="row">
-				<div class="col"><input type="text" class="form-control" name="name" placeholder="Product Name" required="required"></div>
+				<div class="col"><input type="text" class="form-control" name="name" placeholder="Product Name" required="required"  value="<?php echo $product->product_Name; ?>"></div>
 			</div>        	
         </div>
         <div class="form-group">
-        	<input type="text" class="form-control" name="brand" placeholder="Brand" required="required">
+        	<input type="text" class="form-control" name="brand" placeholder="Brand" required="required"  value="<?php echo $product->brand; ?>">
         </div>
 		<div class="form-group">
-            <input type="text" class="form-control" name="supplier_phone" placeholder="Telephone" required="required">
+            <input type="text" class="form-control" name="SupplierPhone" placeholder="Telephone" required="required"  value="<?php echo $product->supplier_phone;?>">
         </div>
 		<div class="form-group">
-            <input type="text" class="form-control" name="supplier" placeholder="Supplier name " required="required">
-        </div>        
+            <input type="text" class="form-control" name="supplier" placeholder="Supplier name " required="required"  value="<?php echo $product->supplier;?>">
+        </div>
+		<?php
+	
+			?>     
         <div class="form-group">
 			<label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
 		</div>
 		<div class="form-group">
-            <button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Register Product</button>
+            <button type="submit" class="btn btn-success btn-lg btn-block" name="update">Update Product</button>
         </div>
     </form>
 </div>

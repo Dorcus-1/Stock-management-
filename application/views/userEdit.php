@@ -195,7 +195,6 @@
 				<button type="submit" name="updateuser" class="btn btn-success btn-lg btn-block">Update Now</button>
 			</div>
 		</form>
-		<div class="text-center">Already have an account? <a href="#">Sign in</a></div>
 	</div>
 </body>
 
